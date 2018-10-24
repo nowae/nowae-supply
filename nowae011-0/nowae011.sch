@@ -207,17 +207,6 @@ F 12 "-" H 6300 2750 60  0001 C CNN "Distributor3 Code"
 $EndComp
 Wire Wire Line
 	5750 3900 6050 3900
-$Comp
-L nowae-inductor:INDUCTOR L?
-U 1 1 5BD1016B
-P 6300 3650
-F 0 "L?" V 6250 3650 50  0000 C CNN
-F 1 "8u5" V 6400 3650 50  0000 C CNN
-F 2 "" V 6150 3550 60  0001 C CNN
-F 3 "" V 6250 3650 60  0001 C CNN
-	1    6300 3650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6150 3650 5850 3650
 Connection ~ 5850 3650
@@ -443,4 +432,20 @@ F 3 "" H 4250 3650 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4250 3650 4250 3750
+$Comp
+L nowae-inductor:INDUCTOR L?
+U 1 1 5BD2FDA8
+P 6300 3650
+F 0 "L?" V 6250 3650 50  0000 C CNN
+F 1 "8u5" V 6400 3650 50  0000 C CNN
+F 2 "INDUCTOR:INDUCTOR-7050" V 6150 3550 60  0001 C CNN
+F 3 "http://katalog.we-online.com/pbs/datasheet/744314850.pdf" V 6250 3650 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" V 6350 3750 50  0001 C CNN "Manufacturer"
+F 5 "744314850" V 6450 3850 50  0001 C CNN "Part Number"
+F 6 "-" V 6550 3950 50  0001 C CNN "Distributor"
+F 7 "-" V 6650 4050 50  0001 C CNN "Distributor Code"
+F 8 "-" V 6750 4150 50  0001 C CNN "Price €"
+	1    6300 3650
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
