@@ -357,55 +357,15 @@ F 8 "-" V 6800 4150 50  0001 C CNN "Price €"
 	1    6350 3650
 	0    -1   -1   0   
 $EndComp
-$Comp
-L nowae-capacitor:CAPACITOR C1
-U 1 1 5BD849AE
-P 6850 4500
-F 0 "C1" H 6850 4600 50  0000 L CNN
-F 1 "10u" H 6856 4415 50  0000 L CNN
-F 2 "CAPACITOR:CAPACITOR-1206" H 6888 4350 30  0001 C CNN
-F 3 "https://katalog.we-online.de/pbs/datasheet/885012108021.pdf" H 6850 4600 60  0001 C CNN
-F 4 "Wurth Elektronik GmbH" H 6850 4150 60  0001 C CNN "Manufacturer"
-F 5 "885012108021" H 6850 4050 60  0001 C CNN "Part Number"
-F 6 "-" H 6850 3950 60  0001 C CNN "Distributor"
-F 7 "-" H 6850 3850 60  0001 C CNN "Distributor Code"
-F 8 "-" H 6850 3750 60  0001 C CNN "Price €"
-F 9 "-" H 6850 3650 60  0001 C CNN "Distributor2"
-F 10 "-" H 6850 3550 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 6850 3450 60  0001 C CNN "Distributor3"
-F 12 "-" H 6850 3350 60  0001 C CNN "Distributor3 Code"
-	1    6850 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3850 4950 4150 4950
 Wire Wire Line
 	4150 3750 5000 3750
-$Comp
-L nowae-capacitor:CAPACITOR C4
-U 1 1 5BD8B68F
-P 7100 4500
-F 0 "C4" H 7100 4600 50  0000 L CNN
-F 1 "10u" H 7106 4415 50  0000 L CNN
-F 2 "CAPACITOR:CAPACITOR-1206" H 7138 4350 30  0001 C CNN
-F 3 "https://katalog.we-online.de/pbs/datasheet/885012108021.pdf" H 7100 4600 60  0001 C CNN
-F 4 "Wurth Elektronik GmbH" H 7100 4150 60  0001 C CNN "Manufacturer"
-F 5 "885012108021" H 7100 4050 60  0001 C CNN "Part Number"
-F 6 "-" H 7100 3950 60  0001 C CNN "Distributor"
-F 7 "-" H 7100 3850 60  0001 C CNN "Distributor Code"
-F 8 "-" H 7100 3750 60  0001 C CNN "Price €"
-F 9 "-" H 7100 3650 60  0001 C CNN "Distributor2"
-F 10 "-" H 7100 3550 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 7100 3450 60  0001 C CNN "Distributor3"
-F 12 "-" H 7100 3350 60  0001 C CNN "Distributor3 Code"
-	1    7100 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7100 4700 7100 4950
+	7100 4650 7100 4950
 Connection ~ 7100 4950
 Wire Wire Line
-	7100 3650 7100 4300
+	7100 3650 7100 4350
 Connection ~ 7100 3650
 Text Label 5950 3900 0    50   ~ 0
 ~PG
@@ -475,11 +435,51 @@ Wire Wire Line
 Wire Wire Line
 	6150 4950 6850 4950
 Wire Wire Line
-	6850 4700 6850 4950
+	6850 4650 6850 4950
 Connection ~ 6850 4950
 Wire Wire Line
 	6850 4950 7100 4950
 Wire Wire Line
-	6850 4300 6850 4150
+	6850 4350 6850 4150
 Connection ~ 6850 4150
+$Comp
+L nowae-capacitor:CAPACITOR_POL C1
+U 1 1 5BE15ECB
+P 6850 4500
+F 0 "C1" H 6875 4600 50  0000 L CNN
+F 1 "10u" H 6875 4400 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-1210" H 6775 4500 50  0001 C CNN
+F 3 "" H 6875 4600 50  0001 C CNN
+F 4 "AVX" H 6850 4150 60  0001 C CNN "Manufacturer"
+F 5 "TPSB105K035R2000" H 6850 4050 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 6850 3950 60  0001 C CNN "Distributor"
+F 7 "1432575" H 6850 3850 60  0001 C CNN "Distributor Code"
+F 8 "0.551" H 6850 3750 60  0001 C CNN "Price €"
+F 9 "-" H 6850 3650 60  0001 C CNN "Distributor2"
+F 10 "-" H 6850 3550 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 6850 3450 60  0001 C CNN "Distributor3"
+F 12 "-" H 6850 3350 60  0001 C CNN "Distributor3 Code"
+	1    6850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-capacitor:CAPACITOR_POL C4
+U 1 1 5BE15FF5
+P 7100 4500
+F 0 "C4" H 7125 4600 50  0000 L CNN
+F 1 "10u" H 7125 4400 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-1210" H 7025 4500 50  0001 C CNN
+F 3 "" H 7125 4600 50  0001 C CNN
+F 4 "AVX" H 7100 4150 60  0001 C CNN "Manufacturer"
+F 5 "TPSB105K035R2000" H 7100 4050 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 7100 3950 60  0001 C CNN "Distributor"
+F 7 "1432575" H 7100 3850 60  0001 C CNN "Distributor Code"
+F 8 "0.551" H 7100 3750 60  0001 C CNN "Price €"
+F 9 "-" H 7100 3650 60  0001 C CNN "Distributor2"
+F 10 "-" H 7100 3550 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7100 3450 60  0001 C CNN "Distributor3"
+F 12 "-" H 7100 3350 60  0001 C CNN "Distributor3 Code"
+	1    7100 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
