@@ -16,46 +16,6 @@ Comment4 ""
 $EndDescr
 $Comp
 L nowae-connector:CONN_2X1 P?
-U 1 1 5C5561CD
-P 1500 2950
-F 0 "P?" H 1500 3100 60  0000 C CNN
-F 1 "12VIN" H 1500 2750 60  0000 C CNN
-F 2 "" H 1875 2950 60  0001 C CNN
-F 3 "" H 1875 2950 60  0001 C CNN
-F 4 "-" H 1500 2600 60  0001 C CNN "Manufacturer"
-F 5 "-" H 1500 2500 60  0001 C CNN "Part Number"
-F 6 "-" H 1500 2400 60  0001 C CNN "Distributor"
-F 7 "-" H 1500 2300 60  0001 C CNN "Distributor Code"
-F 8 "-" H 1500 2200 60  0001 C CNN "Price €"
-F 9 "-" H 1500 2100 60  0001 C CNN "Distributor2"
-F 10 "-" H 1500 2000 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 1500 1900 60  0001 C CNN "Distributor3"
-F 12 "-" H 1500 1800 60  0001 C CNN "Distributor3 Code"
-	1    1500 2950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L nowae-connector:CONN_2X1 P?
-U 1 1 5C55635F
-P 10050 2950
-F 0 "P?" H 10050 3100 60  0000 C CNN
-F 1 "12VOUT" H 10050 2750 60  0000 C CNN
-F 2 "" H 10425 2950 60  0001 C CNN
-F 3 "" H 10425 2950 60  0001 C CNN
-F 4 "-" H 10050 2600 60  0001 C CNN "Manufacturer"
-F 5 "-" H 10050 2500 60  0001 C CNN "Part Number"
-F 6 "-" H 10050 2400 60  0001 C CNN "Distributor"
-F 7 "-" H 10050 2300 60  0001 C CNN "Distributor Code"
-F 8 "-" H 10050 2200 60  0001 C CNN "Price €"
-F 9 "-" H 10050 2100 60  0001 C CNN "Distributor2"
-F 10 "-" H 10050 2000 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 10050 1900 60  0001 C CNN "Distributor3"
-F 12 "-" H 10050 1800 60  0001 C CNN "Distributor3 Code"
-	1    10050 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L nowae-connector:CONN_2X1 P?
 U 1 1 5C5569EB
 P 4150 3300
 F 0 "P?" H 4150 3450 60  0000 C CNN
@@ -593,7 +553,7 @@ $EndComp
 Wire Wire Line
 	9250 5200 9500 5200
 Wire Wire Line
-	9700 5200 9700 3000
+	9700 5200 9700 3100
 Wire Wire Line
 	9700 3000 9800 3000
 Connection ~ 9250 5200
@@ -607,7 +567,7 @@ Connection ~ 8450 3600
 Wire Wire Line
 	9250 2800 9250 2900
 Wire Wire Line
-	1850 3000 1850 5200
+	1850 3000 1850 3100
 Wire Wire Line
 	1850 5200 2050 5200
 Wire Wire Line
@@ -1268,4 +1228,54 @@ Wire Wire Line
 	9500 5200 9700 5200
 Wire Wire Line
 	9250 2900 9800 2900
+$Comp
+L nowae-connector:BARREL_JACK P?
+U 1 1 5C57AF1E
+P 1450 3000
+F 0 "P?" H 1450 3200 50  0000 C CNN
+F 1 "12VIN" H 1450 2850 50  0000 C CNN
+F 2 "" H 1450 3000 50  0001 C CNN
+F 3 "" H 1450 3000 50  0001 C CNN
+F 4 "-" H 1450 2650 60  0001 C CNN "Manufacturer"
+F 5 "-" H 1450 2550 60  0001 C CNN "Part Number"
+F 6 "-" H 1450 2450 60  0001 C CNN "Distributor"
+F 7 "-" H 1450 2350 60  0001 C CNN "Distributor Code"
+F 8 "-" H 1450 2250 60  0001 C CNN "Price €"
+F 9 "-" H 1450 2150 60  0001 C CNN "Distributor2"
+F 10 "-" H 1450 2050 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 1450 1950 60  0001 C CNN "Distributor3"
+F 12 "-" H 1450 1850 60  0001 C CNN "Distributor3 Code"
+	1    1450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-connector:BARREL_JACK P?
+U 1 1 5C57B2E2
+P 10100 3000
+F 0 "P?" H 10100 3200 50  0000 C CNN
+F 1 "12VOUT" H 10100 2850 50  0000 C CNN
+F 2 "" H 10100 3000 50  0001 C CNN
+F 3 "" H 10100 3000 50  0001 C CNN
+F 4 "-" H 10100 2650 60  0001 C CNN "Manufacturer"
+F 5 "-" H 10100 2550 60  0001 C CNN "Part Number"
+F 6 "-" H 10100 2450 60  0001 C CNN "Distributor"
+F 7 "-" H 10100 2350 60  0001 C CNN "Distributor Code"
+F 8 "-" H 10100 2250 60  0001 C CNN "Price €"
+F 9 "-" H 10100 2150 60  0001 C CNN "Distributor2"
+F 10 "-" H 10100 2050 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 10100 1950 60  0001 C CNN "Distributor3"
+F 12 "-" H 10100 1850 60  0001 C CNN "Distributor3 Code"
+	1    10100 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3100 1850 3100
+Connection ~ 1850 3100
+Wire Wire Line
+	1850 3100 1850 5200
+Wire Wire Line
+	9800 3100 9700 3100
+Connection ~ 9700 3100
+Wire Wire Line
+	9700 3100 9700 3000
 $EndSCHEMATC
