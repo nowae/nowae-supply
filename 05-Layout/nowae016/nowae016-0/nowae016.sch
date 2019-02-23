@@ -844,7 +844,7 @@ F 10 "-" H 5950 1200 60  0001 C CNN "Distributor2 Code"
 F 11 "-" H 5950 1100 60  0001 C CNN "Distributor3"
 F 12 "-" H 5950 1000 60  0001 C CNN "Distributor3 Code"
 	1    5950 2150
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2750 4000 3000 4000
