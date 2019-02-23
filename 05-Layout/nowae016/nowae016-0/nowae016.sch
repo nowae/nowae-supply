@@ -473,7 +473,7 @@ $EndComp
 Wire Wire Line
 	9250 5200 9500 5200
 Wire Wire Line
-	9700 5200 9700 3100
+	9700 5200 9700 3800
 Wire Wire Line
 	9700 3000 9800 3000
 Connection ~ 9250 5200
@@ -790,21 +790,21 @@ $EndComp
 $Comp
 L nowae-resistor:RESISTOR R?
 U 1 1 5C576361
-P 4200 4300
-F 0 "R?" V 4280 4300 50  0000 C CNN
-F 1 "10k" V 4200 4300 50  0000 C CNN
-F 2 "RESISTOR:RESISTOR-0603" V 4130 4300 30  0001 C CNN
-F 3 "" H 4200 4300 30  0001 C CNN
-F 4 "-" H 4200 3950 60  0001 C CNN "Manufacturer"
-F 5 "-" H 4200 3850 60  0001 C CNN "Part Number"
-F 6 "-" H 4200 3750 60  0001 C CNN "Distributor"
-F 7 "-" H 4200 3650 60  0001 C CNN "Distributor Code"
-F 8 "-" H 4200 3550 60  0001 C CNN "Price €"
-F 9 "-" H 4200 3450 60  0001 C CNN "Distributor2"
-F 10 "-" H 4200 3350 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 4200 3250 60  0001 C CNN "Distributor3"
-F 12 "-" H 4200 3150 60  0001 C CNN "Distributor3 Code"
-	1    4200 4300
+P 4200 4350
+F 0 "R?" V 4280 4350 50  0000 C CNN
+F 1 "10k" V 4200 4350 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 4130 4350 30  0001 C CNN
+F 3 "" H 4200 4350 30  0001 C CNN
+F 4 "-" H 4200 4000 60  0001 C CNN "Manufacturer"
+F 5 "-" H 4200 3900 60  0001 C CNN "Part Number"
+F 6 "-" H 4200 3800 60  0001 C CNN "Distributor"
+F 7 "-" H 4200 3700 60  0001 C CNN "Distributor Code"
+F 8 "-" H 4200 3600 60  0001 C CNN "Price €"
+F 9 "-" H 4200 3500 60  0001 C CNN "Distributor2"
+F 10 "-" H 4200 3400 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 4200 3300 60  0001 C CNN "Distributor3"
+F 12 "-" H 4200 3200 60  0001 C CNN "Distributor3 Code"
+	1    4200 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -825,25 +825,25 @@ Wire Wire Line
 Wire Wire Line
 	3900 3700 4200 3700
 Wire Wire Line
-	4200 3700 4200 4050
+	4200 3700 4200 4100
 $Comp
 L nowae-led:YELLOW DL?
 U 1 1 5C5E7896
-P 5950 1850
-F 0 "DL?" H 5950 1950 50  0000 C CNN
-F 1 "YELLOW" H 5950 1750 50  0000 C CNN
-F 2 "LEDs:LED-0603" H 5950 1850 60  0001 C CNN
-F 3 "Yellow" H 5950 1850 60  0001 C CNN
-F 4 "-" H 5950 1500 60  0001 C CNN "Manufacturer"
-F 5 "-" H 5950 1400 60  0001 C CNN "Part Number"
-F 6 "-" H 5950 1300 60  0001 C CNN "Distributor"
-F 7 "-" H 5950 1200 60  0001 C CNN "Distributor Code"
-F 8 "-" H 5950 1100 60  0001 C CNN "Price €"
-F 9 "-" H 5950 1000 60  0001 C CNN "Distributor2"
-F 10 "-" H 5950 900 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 5950 800 60  0001 C CNN "Distributor3"
-F 12 "-" H 5950 700 60  0001 C CNN "Distributor3 Code"
-	1    5950 1850
+P 5950 2150
+F 0 "DL?" H 5950 2250 50  0000 C CNN
+F 1 "YELLOW" H 5950 2050 50  0000 C CNN
+F 2 "LEDs:LED-0603" H 5950 2150 60  0001 C CNN
+F 3 "Yellow" H 5950 2150 60  0001 C CNN
+F 4 "-" H 5950 1800 60  0001 C CNN "Manufacturer"
+F 5 "-" H 5950 1700 60  0001 C CNN "Part Number"
+F 6 "-" H 5950 1600 60  0001 C CNN "Distributor"
+F 7 "-" H 5950 1500 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5950 1400 60  0001 C CNN "Price €"
+F 9 "-" H 5950 1300 60  0001 C CNN "Distributor2"
+F 10 "-" H 5950 1200 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5950 1100 60  0001 C CNN "Distributor3"
+F 12 "-" H 5950 1000 60  0001 C CNN "Distributor3 Code"
+	1    5950 2150
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -863,7 +863,7 @@ Wire Wire Line
 	2900 4100 2900 5200
 Connection ~ 2900 5200
 Wire Wire Line
-	4200 4550 4200 5200
+	4200 4600 4200 5200
 Connection ~ 4200 5200
 Wire Wire Line
 	4200 5200 4450 5200
@@ -903,26 +903,6 @@ Wire Wire Line
 	6350 1850 6150 1850
 Text Label 6350 1850 2    50   ~ 0
 ~PG
-$Comp
-L nowae-led:RED DL?
-U 1 1 5C772023
-P 5950 2150
-F 0 "DL?" H 5950 2250 50  0000 C CNN
-F 1 "RED" H 5950 2050 50  0000 C CNN
-F 2 "LEDs:LED-0603" H 5950 2150 60  0001 C CNN
-F 3 "Red" H 5950 2150 60  0001 C CNN
-F 4 "-" H 5950 1800 60  0001 C CNN "Manufacturer"
-F 5 "-" H 5950 1700 60  0001 C CNN "Part Number"
-F 6 "-" H 5950 1600 60  0001 C CNN "Distributor"
-F 7 "-" H 5950 1500 60  0001 C CNN "Distributor Code"
-F 8 "-" H 5950 1400 60  0001 C CNN "Price €"
-F 9 "-" H 5950 1300 60  0001 C CNN "Distributor2"
-F 10 "-" H 5950 1200 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 5950 1100 60  0001 C CNN "Distributor3"
-F 12 "-" H 5950 1000 60  0001 C CNN "Distributor3 Code"
-	1    5950 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 2150 6150 2150
 Text Label 6350 2150 2    50   ~ 0
@@ -1171,21 +1151,21 @@ $EndComp
 $Comp
 L nowae-connector:BARREL_JACK P?
 U 1 1 5C57B2E2
-P 10100 3000
-F 0 "P?" H 10100 3200 50  0000 C CNN
-F 1 "12VOUT" H 10100 2850 50  0000 C CNN
-F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 10100 3000 50  0001 C CNN
-F 3 "" H 10100 3000 50  0001 C CNN
-F 4 "-" H 10100 2650 60  0001 C CNN "Manufacturer"
-F 5 "-" H 10100 2550 60  0001 C CNN "Part Number"
-F 6 "-" H 10100 2450 60  0001 C CNN "Distributor"
-F 7 "-" H 10100 2350 60  0001 C CNN "Distributor Code"
-F 8 "-" H 10100 2250 60  0001 C CNN "Price €"
-F 9 "-" H 10100 2150 60  0001 C CNN "Distributor2"
-F 10 "-" H 10100 2050 60  0001 C CNN "Distributor2 Code"
-F 11 "-" H 10100 1950 60  0001 C CNN "Distributor3"
-F 12 "-" H 10100 1850 60  0001 C CNN "Distributor3 Code"
-	1    10100 3000
+P 10100 3700
+F 0 "P?" H 10100 3900 50  0000 C CNN
+F 1 "12VOUT2" H 10100 3550 50  0000 C CNN
+F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 10100 3700 50  0001 C CNN
+F 3 "" H 10100 3700 50  0001 C CNN
+F 4 "-" H 10100 3350 60  0001 C CNN "Manufacturer"
+F 5 "-" H 10100 3250 60  0001 C CNN "Part Number"
+F 6 "-" H 10100 3150 60  0001 C CNN "Distributor"
+F 7 "-" H 10100 3050 60  0001 C CNN "Distributor Code"
+F 8 "-" H 10100 2950 60  0001 C CNN "Price €"
+F 9 "-" H 10100 2850 60  0001 C CNN "Distributor2"
+F 10 "-" H 10100 2750 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 10100 2650 60  0001 C CNN "Distributor3"
+F 12 "-" H 10100 2550 60  0001 C CNN "Distributor3 Code"
+	1    10100 3700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1277,5 +1257,58 @@ F 11 "-" H 9250 3450 60  0001 C CNN "Distributor3"
 F 12 "-" H 9250 3350 60  0001 C CNN "Distributor3 Code"
 	1    9250 4500
 	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae-connector:BARREL_JACK P?
+U 1 1 5C71E675
+P 10100 3000
+F 0 "P?" H 10100 3200 50  0000 C CNN
+F 1 "12VOUT1" H 10100 2850 50  0000 C CNN
+F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 10100 3000 50  0001 C CNN
+F 3 "" H 10100 3000 50  0001 C CNN
+F 4 "-" H 10100 2650 60  0001 C CNN "Manufacturer"
+F 5 "-" H 10100 2550 60  0001 C CNN "Part Number"
+F 6 "-" H 10100 2450 60  0001 C CNN "Distributor"
+F 7 "-" H 10100 2350 60  0001 C CNN "Distributor Code"
+F 8 "-" H 10100 2250 60  0001 C CNN "Price €"
+F 9 "-" H 10100 2150 60  0001 C CNN "Distributor2"
+F 10 "-" H 10100 2050 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 10100 1950 60  0001 C CNN "Distributor3"
+F 12 "-" H 10100 1850 60  0001 C CNN "Distributor3 Code"
+	1    10100 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3600 9250 3600
+Connection ~ 9250 3600
+Wire Wire Line
+	9800 3700 9700 3700
+Connection ~ 9700 3700
+Wire Wire Line
+	9700 3700 9700 3100
+Wire Wire Line
+	9800 3800 9700 3800
+Connection ~ 9700 3800
+Wire Wire Line
+	9700 3800 9700 3700
+$Comp
+L nowae-led:GREEN DL?
+U 1 1 5C73736A
+P 5950 1850
+F 0 "DL?" H 5950 1950 50  0000 C CNN
+F 1 "GREEN" H 5950 1750 50  0000 C CNN
+F 2 "LEDs:LED-0603" H 5950 1850 60  0001 C CNN
+F 3 "Green" H 5950 1850 60  0001 C CNN
+F 4 "-" H 5950 1500 60  0001 C CNN "Manufacturer"
+F 5 "-" H 5950 1400 60  0001 C CNN "Part Number"
+F 6 "-" H 5950 1300 60  0001 C CNN "Distributor"
+F 7 "-" H 5950 1200 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5950 1100 60  0001 C CNN "Price €"
+F 9 "-" H 5950 1000 60  0001 C CNN "Distributor2"
+F 10 "-" H 5950 900 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5950 800 60  0001 C CNN "Distributor3"
+F 12 "-" H 5950 700 60  0001 C CNN "Distributor3 Code"
+	1    5950 1850
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
