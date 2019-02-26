@@ -125,11 +125,11 @@ F 0 "C7" H 7350 5350 50  0000 L CNN
 F 1 "820p" H 7356 5165 50  0000 L CNN
 F 2 "CAPACITOR:CAPACITOR-0603" H 7388 5100 30  0001 C CNN
 F 3 "" H 7350 5350 60  0001 C CNN
-F 4 "Wurth Elektronik GmbH" H 7350 4900 60  0001 C CNN "Manufacturer"
-F 5 "-" H 7350 4800 60  0001 C CNN "Part Number"
-F 6 "-" H 7350 4700 60  0001 C CNN "Distributor"
-F 7 "-" H 7350 4600 60  0001 C CNN "Distributor Code"
-F 8 "-" H 7350 4500 60  0001 C CNN "Price €"
+F 4 "Multicomp" H 7350 4900 60  0001 C CNN "Manufacturer"
+F 5 "MC0603B821K500CT" H 7350 4800 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 7350 4700 60  0001 C CNN "Distributor"
+F 7 "1759086" H 7350 4600 60  0001 C CNN "Distributor Code"
+F 8 "0.0351" H 7350 4500 60  0001 C CNN "Price €"
 F 9 "-" H 7350 4400 60  0001 C CNN "Distributor2"
 F 10 "-" H 7350 4300 60  0001 C CNN "Distributor2 Code"
 F 11 "-" H 7350 4200 60  0001 C CNN "Distributor3"
