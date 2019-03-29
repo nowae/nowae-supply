@@ -1,4 +1,4 @@
-update=Venerdì 22 Marzo 2019 11:02:47
+update=Venerdì 29 Marzo 2019 12:10:51
 version=1
 last_client=kicad
 [general]
@@ -75,4 +75,4 @@ OthersTextUpright=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0

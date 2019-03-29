@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Mini UPS 12VDC"
-Date "2019-02-03"
+Date "2019-03-29"
 Rev "0"
 Comp ""
 Comment1 ""
@@ -770,7 +770,7 @@ F 4 "Vishay" H 2500 4350 60  0001 C CNN "Manufacturer"
 F 5 "CRCW06032K70FKEA" H 2500 4250 60  0001 C CNN "Part Number"
 F 6 "-" H 2500 4150 60  0001 C CNN "Distributor"
 F 7 "-" H 2500 4050 60  0001 C CNN "Distributor Code"
-F 8 "0,0167" H 2500 3950 60  0001 C CNN "Price €"
+F 8 "0.0167" H 2500 3950 60  0001 C CNN "Price €"
 F 9 "-" H 2500 3850 60  0001 C CNN "Distributor2"
 F 10 "-" H 2500 3750 60  0001 C CNN "Distributor2 Code"
 F 11 "-" H 2500 3650 60  0001 C CNN "Distributor3"
@@ -1158,14 +1158,14 @@ L nowae-connector:BARREL_JACK P4
 U 1 1 5C57B2E2
 P 10050 4050
 F 0 "P4" H 10050 4250 50  0000 C CNN
-F 1 "BARRELLJACK" H 10050 3900 50  0001 C CNN
+F 1 "BARRELJACK" H 10050 3900 50  0001 C CNN
 F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 10050 4050 50  0001 C CNN
 F 3 "-" H 10050 4050 50  0001 C CNN
 F 4 "Wurth Elektronik GmbH" H 10050 3700 60  0001 C CNN "Manufacturer"
 F 5 "694106301002" H 10050 3600 60  0001 C CNN "Part Number"
 F 6 "-" H 10050 3500 60  0001 C CNN "Distributor"
 F 7 "-" H 10050 3400 60  0001 C CNN "Distributor Code"
-F 8 "-" H 10050 3300 60  0001 C CNN "Price €"
+F 8 "0.86" H 10050 3300 60  0001 C CNN "Price €"
 F 9 "-" H 10050 3200 60  0001 C CNN "Distributor2"
 F 10 "-" H 10050 3100 60  0001 C CNN "Distributor2 Code"
 F 11 "-" H 10050 3000 60  0001 C CNN "Distributor3"
