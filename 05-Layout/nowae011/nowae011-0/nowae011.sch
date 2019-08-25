@@ -1,18 +1,18 @@
 EESchema Schematic File Version 4
 LIBS:nowae011-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "12V/24V to 5V Power Module"
-Date "2018-10-24"
+Date "2019-08-25"
 Rev "0"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "2019-08-25"
 $EndDescr
 $Comp
 L nowae-switching:ST1S14PHR U1
@@ -346,11 +346,11 @@ L nowae-inductor:INDUCTOR L1
 U 1 1 5BD2FDA8
 P 6350 3650
 F 0 "L1" V 6300 3650 50  0000 C CNN
-F 1 "8u5" V 6450 3650 50  0000 C CNN
+F 1 "8u2" V 6450 3650 50  0000 C CNN
 F 2 "INDUCTOR:INDUCTOR-WURTH-4030" V 6200 3550 60  0001 C CNN
-F 3 "http://katalog.we-online.com/pbs/datasheet/744314850.pdf" V 6300 3650 60  0001 C CNN
+F 3 "https://katalog.we-online.com/pbs/datasheet/74438357082.pdf" V 6300 3650 60  0001 C CNN
 F 4 "Wurth Elektronik GmbH" V 6400 3750 50  0001 C CNN "Manufacturer"
-F 5 "744314850" V 6500 3850 50  0001 C CNN "Part Number"
+F 5 "74438357082" V 6500 3850 50  0001 C CNN "Part Number"
 F 6 "-" V 6600 3950 50  0001 C CNN "Distributor"
 F 7 "-" V 6700 4050 50  0001 C CNN "Distributor Code"
 F 8 "-" V 6800 4150 50  0001 C CNN "Price €"

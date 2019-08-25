@@ -1,4 +1,4 @@
-update=Wednesday, 24 October 2018 at 14:32:01
+update=Domenica 25 Agosto 2019 18:48:51
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=/Users/nicola/nowae/libkicad/nowae-a4.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=../../../07-Production/01-Schematics/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
