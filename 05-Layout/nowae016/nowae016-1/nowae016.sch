@@ -1,0 +1,1632 @@
+EESchema Schematic File Version 4
+LIBS:nowae016-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Mini UPS 12VDC"
+Date "2020-10-17"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L nowae016-rescue:CONN_2X1-nowae-connector P2
+U 1 1 5C5569EB
+P 6600 4950
+F 0 "P2" H 6600 5100 60  0000 C CNN
+F 1 "CONN_2X1" H 6600 4750 60  0001 C CNN
+F 2 "CONNECTOR:CONN-STRIP-2x1-2.54" H 6975 4950 60  0001 C CNN
+F 3 "-" H 6975 4950 60  0001 C CNN
+F 4 "-" H 6600 4600 60  0001 C CNN "Manufacturer"
+F 5 "-" H 6600 4500 60  0001 C CNN "Part Number"
+F 6 "-" H 6600 4400 60  0001 C CNN "Distributor"
+F 7 "-" H 6600 4300 60  0001 C CNN "Distributor Code"
+F 8 "-" H 6600 4200 60  0001 C CNN "Price €"
+F 9 "-" H 6600 4100 60  0001 C CNN "Distributor2"
+F 10 "-" H 6600 4000 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 6600 3900 60  0001 C CNN "Distributor3"
+F 12 "-" H 6600 3800 60  0001 C CNN "Distributor3 Code"
+	1    6600 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae-switching:TPS61087DRCR U2
+U 1 1 5C558CC8
+P 10500 5500
+F 0 "U2" H 10500 5950 60  0000 C CNN
+F 1 "TPS61087DRCR" H 10500 5025 60  0000 C CNN
+F 2 "SON:WSON10_3.0x3.0_0.5_10+1" H 10525 4325 60  0001 C CNN
+F 3 "Step Up, +2.5 to +6Vin, +3 to 18.5V Vout, 3.2A" H 10525 4925 60  0001 C CNN
+F 4 "Texas Instruments" H 10525 4825 60  0001 C CNN "Manufacturer"
+F 5 "TPS61087DRCR" H 10525 4725 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 10525 4625 60  0001 C CNN "Distributor"
+F 7 "2342566" H 10525 4525 60  0001 C CNN "Distributor Code"
+F 8 "2.18" H 10525 4425 60  0001 C CNN "Price €"
+F 9 "-" H 3950 1300 50  0001 C CNN "Distributor2"
+F 10 "-" H 3950 1300 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3950 1300 50  0001 C CNN "Distributor3"
+F 12 "-" H 3950 1300 50  0001 C CNN "Distributor3 Code"
+	1    10500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:INDUCTOR-nowae-inductor L1
+U 1 1 5C5597DC
+P 10500 4850
+F 0 "L1" V 10450 4850 50  0000 C CNN
+F 1 "3u3" V 10600 4850 50  0000 C CNN
+F 2 "INDUCTOR:INDUCTOR_WE-MAPI-3020" V 10350 4750 60  0001 C CNN
+F 3 "-" V 10450 4850 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" V 10550 4950 50  0001 C CNN "Manufacturer"
+F 5 "74438336033" V 10650 5050 50  0001 C CNN "Part Number"
+F 6 "Wurth Elektronik GmbH" V 10750 5150 50  0001 C CNN "Distributor"
+F 7 "74438336033" V 10850 5250 50  0001 C CNN "Distributor Code"
+F 8 "-" V 10950 5350 50  0001 C CNN "Price €"
+F 9 "-" H 3950 1300 50  0001 C CNN "Distributor2"
+F 10 "-" H 3950 1300 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3950 1300 50  0001 C CNN "Distributor3"
+F 12 "-" H 3950 1300 50  0001 C CNN "Distributor3 Code"
+	1    10500 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 5250 9900 5250
+Wire Wire Line
+	9900 5250 9900 4850
+Wire Wire Line
+	9900 4850 10350 4850
+Wire Wire Line
+	11000 5250 11100 5250
+Wire Wire Line
+	11100 5250 11100 4850
+Wire Wire Line
+	11100 4850 10650 4850
+Wire Wire Line
+	11000 5350 11100 5350
+Wire Wire Line
+	11100 5350 11100 5250
+Connection ~ 11100 5250
+Wire Wire Line
+	10000 5450 9900 5450
+Connection ~ 9900 5250
+Wire Wire Line
+	10000 5550 9900 5550
+Wire Wire Line
+	9900 5550 9900 5650
+Wire Wire Line
+	9900 5750 10000 5750
+Wire Wire Line
+	10000 5650 9900 5650
+Connection ~ 9900 5650
+Wire Wire Line
+	9900 5650 9900 5750
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C6
+U 1 1 5C559F62
+P 11100 6300
+F 0 "C6" H 11100 6400 50  0000 L CNN
+F 1 "100n" H 11106 6215 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 11138 6150 30  0001 C CNN
+F 3 "-" H 11100 6400 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 11100 5950 60  0001 C CNN "Manufacturer"
+F 5 "885012206020" H 11100 5850 60  0001 C CNN "Part Number"
+F 6 "-" H 11100 5750 60  0001 C CNN "Distributor"
+F 7 "-" H 11100 5650 60  0001 C CNN "Distributor Code"
+F 8 "0.0896" H 11100 5550 60  0001 C CNN "Price €"
+F 9 "-" H 11100 5450 60  0001 C CNN "Distributor2"
+F 10 "-" H 11100 5350 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 11100 5250 60  0001 C CNN "Distributor3"
+F 12 "-" H 11100 5150 60  0001 C CNN "Distributor3 Code"
+	1    11100 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C7
+U 1 1 5C55A0DE
+P 11300 6550
+F 0 "C7" H 11300 6650 50  0000 L CNN
+F 1 "820p" H 11306 6465 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 11338 6400 30  0001 C CNN
+F 3 "-" H 11300 6650 60  0001 C CNN
+F 4 "Multicomp" H 11300 6200 60  0001 C CNN "Manufacturer"
+F 5 "MC0603B821K500CT" H 11300 6100 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 11300 6000 60  0001 C CNN "Distributor"
+F 7 "1759086" H 11300 5900 60  0001 C CNN "Distributor Code"
+F 8 "0.0351" H 11300 5800 60  0001 C CNN "Price €"
+F 9 "-" H 11300 5700 60  0001 C CNN "Distributor2"
+F 10 "-" H 11300 5600 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 11300 5500 60  0001 C CNN "Distributor3"
+F 12 "-" H 11300 5400 60  0001 C CNN "Distributor3 Code"
+	1    11300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R12
+U 1 1 5C55A406
+P 11300 6000
+F 0 "R12" V 11380 6000 50  0000 C CNN
+F 1 "18k" V 11300 6000 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 11230 6000 30  0001 C CNN
+F 3 "-" H 11300 6000 30  0001 C CNN
+F 4 "Vishay" H 11300 5650 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 11300 5550 60  0001 C CNN "Part Number"
+F 6 "-" H 11300 5450 60  0001 C CNN "Distributor"
+F 7 "-" H 11300 5350 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 11300 5250 60  0001 C CNN "Price €"
+F 9 "-" H 11300 5150 60  0001 C CNN "Distributor2"
+F 10 "-" H 11300 5050 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 11300 4950 60  0001 C CNN "Distributor3"
+F 12 "-" H 11300 4850 60  0001 C CNN "Distributor3 Code"
+	1    11300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5650 11300 5650
+Wire Wire Line
+	11300 5650 11300 5750
+Wire Wire Line
+	11300 6250 11300 6350
+Wire Wire Line
+	11100 6100 11100 5750
+Wire Wire Line
+	11100 5750 11000 5750
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R13
+U 1 1 5C55AB22
+P 11550 6200
+F 0 "R13" V 11630 6200 50  0000 C CNN
+F 1 "18k" V 11550 6200 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 11480 6200 30  0001 C CNN
+F 3 "-" H 11550 6200 30  0001 C CNN
+F 4 "Vishay" H 11550 5850 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 11550 5750 60  0001 C CNN "Part Number"
+F 6 "-" H 11550 5650 60  0001 C CNN "Distributor"
+F 7 "-" H 11550 5550 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 11550 5450 60  0001 C CNN "Price €"
+F 9 "-" H 11550 5350 60  0001 C CNN "Distributor2"
+F 10 "-" H 11550 5250 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 11550 5150 60  0001 C CNN "Distributor3"
+F 12 "-" H 11550 5050 60  0001 C CNN "Distributor3 Code"
+	1    11550 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R14
+U 1 1 5C55ABCF
+P 11900 5500
+F 0 "R14" V 11980 5500 50  0000 C CNN
+F 1 "154k" V 11900 5500 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 11830 5500 30  0001 C CNN
+F 3 "-" H 11900 5500 30  0001 C CNN
+F 4 "Multicomp" H 11900 5150 60  0001 C CNN "Manufacturer"
+F 5 "MCWR06X1543FTL" H 11900 5050 60  0001 C CNN "Part Number"
+F 6 "-" H 11900 4950 60  0001 C CNN "Distributor"
+F 7 "-" H 11900 4850 60  0001 C CNN "Distributor Code"
+F 8 "0.0057" H 11900 4750 60  0001 C CNN "Price €"
+F 9 "-" H 11900 4650 60  0001 C CNN "Distributor2"
+F 10 "-" H 11900 4550 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 11900 4450 60  0001 C CNN "Distributor3"
+F 12 "-" H 11900 4350 60  0001 C CNN "Distributor3 Code"
+	1    11900 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11300 6750 11300 6850
+Wire Wire Line
+	11300 6850 11100 6850
+Wire Wire Line
+	11100 6850 11100 6500
+Wire Wire Line
+	11300 6850 11550 6850
+Wire Wire Line
+	11550 6850 11550 6450
+Connection ~ 11300 6850
+Wire Wire Line
+	11000 5500 11550 5500
+Wire Wire Line
+	11550 5500 11550 5950
+Wire Wire Line
+	11650 5500 11550 5500
+Connection ~ 11550 5500
+$Comp
+L nowae-diode:SS22 D1
+U 1 1 5C55CBE4
+P 11650 5250
+F 0 "D1" H 11650 5350 50  0000 C CNN
+F 1 "SS22" H 11650 5150 50  0000 C CNN
+F 2 "DIODE:DIODE-DO214AA-UNI" H 11650 4450 60  0001 C CNN
+F 3 "2A 20V" H 11650 5050 60  0001 C CNN
+F 4 "ON Semiconductor" H 11650 4950 60  0001 C CNN "Manufacturer"
+F 5 "SS22" H 11650 4850 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 11650 4750 60  0001 C CNN "Distributor"
+F 7 "1467538" H 11650 4650 60  0001 C CNN "Distributor Code"
+F 8 "0.208" H 11650 4550 60  0001 C CNN "Price €"
+F 9 "-" H 3850 1300 50  0001 C CNN "Distributor2"
+F 10 "-" H 3850 1300 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3850 1300 50  0001 C CNN "Distributor3"
+F 12 "-" H 3850 1300 50  0001 C CNN "Distributor3 Code"
+	1    11650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 5250 11100 5250
+Wire Wire Line
+	11850 5250 12250 5250
+Wire Wire Line
+	12250 5250 12250 5500
+Wire Wire Line
+	12250 5500 12150 5500
+$Comp
+L power:GND #PWR06
+U 1 1 5C55DC68
+P 9900 7000
+F 0 "#PWR06" H 9900 7000 30  0001 C CNN
+F 1 "GND" H 9900 7000 30  0001 C CNN
+F 2 "" H 9900 7000 60  0000 C CNN
+F 3 "" H 9900 7000 60  0000 C CNN
+	1    9900 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C8
+U 1 1 5C55E05E
+P 12250 6150
+F 0 "C8" H 12250 6250 50  0000 L CNN
+F 1 "10u" H 12256 6065 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0805" H 12288 6000 30  0001 C CNN
+F 3 "-" H 12250 6250 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 12250 5800 60  0001 C CNN "Manufacturer"
+F 5 "885012107014" H 12250 5700 60  0001 C CNN "Part Number"
+F 6 "-" H 12250 5600 60  0001 C CNN "Distributor"
+F 7 "-" H 12250 5500 60  0001 C CNN "Distributor Code"
+F 8 "0.371" H 12250 5400 60  0001 C CNN "Price €"
+F 9 "-" H 12250 5300 60  0001 C CNN "Distributor2"
+F 10 "-" H 12250 5200 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 12250 5100 60  0001 C CNN "Distributor3"
+F 12 "-" H 12250 5000 60  0001 C CNN "Distributor3 Code"
+	1    12250 6150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 5500 12500 5500
+Connection ~ 12250 5500
+Wire Wire Line
+	12500 5950 12500 5500
+Connection ~ 12500 5500
+Wire Wire Line
+	12500 5500 12750 5500
+Wire Wire Line
+	12250 5500 12250 5950
+Wire Wire Line
+	11550 6850 12250 6850
+Wire Wire Line
+	12250 6850 12250 6350
+Connection ~ 11550 6850
+Wire Wire Line
+	12250 6850 12500 6850
+Wire Wire Line
+	12500 6850 12500 6350
+Connection ~ 12250 6850
+Wire Wire Line
+	12500 6850 12750 6850
+Connection ~ 12500 6850
+Connection ~ 12750 6850
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C5
+U 1 1 5C5663D1
+P 7600 6050
+F 0 "C5" H 7600 6150 50  0000 L CNN
+F 1 "1u" H 7606 5965 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 7638 5900 30  0001 C CNN
+F 3 "-" H 7600 6150 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 7600 5700 60  0001 C CNN "Manufacturer"
+F 5 "885012106003" H 7600 5600 60  0001 C CNN "Part Number"
+F 6 "-" H 7600 5500 60  0001 C CNN "Distributor"
+F 7 "-" H 7600 5400 60  0001 C CNN "Distributor Code"
+F 8 "0.0939" H 7600 5300 60  0001 C CNN "Price €"
+F 9 "-" H 7600 5200 60  0001 C CNN "Distributor2"
+F 10 "-" H 7600 5100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7600 5000 60  0001 C CNN "Distributor3"
+F 12 "-" H 7600 4900 60  0001 C CNN "Distributor3 Code"
+	1    7600 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C4
+U 1 1 5C56677E
+P 7350 6050
+F 0 "C4" H 7350 6150 50  0000 L CNN
+F 1 "22u" H 7356 5965 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0805" H 7388 5900 30  0001 C CNN
+F 3 "-" H 7350 6150 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 7350 5700 60  0001 C CNN "Manufacturer"
+F 5 "885012107005" H 7350 5600 60  0001 C CNN "Part Number"
+F 6 "-" H 7350 5500 60  0001 C CNN "Distributor"
+F 7 "-" H 7350 5400 60  0001 C CNN "Distributor Code"
+F 8 "0.0939" H 7350 5300 60  0001 C CNN "Price €"
+F 9 "-" H 7350 5200 60  0001 C CNN "Distributor2"
+F 10 "-" H 7350 5100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7350 5000 60  0001 C CNN "Distributor3"
+F 12 "-" H 7350 4900 60  0001 C CNN "Distributor3 Code"
+	1    7350 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C3
+U 1 1 5C56685A
+P 7050 6050
+F 0 "C3" H 7050 6150 50  0000 L CNN
+F 1 "2u2" H 7056 5965 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0603" H 7088 5900 30  0001 C CNN
+F 3 "-" H 7050 6150 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 7050 5700 60  0001 C CNN "Manufacturer"
+F 5 "885012106004" H 7050 5600 60  0001 C CNN "Part Number"
+F 6 "-" H 7050 5500 60  0001 C CNN "Distributor"
+F 7 "-" H 7050 5400 60  0001 C CNN "Distributor Code"
+F 8 "0.12" H 7050 5300 60  0001 C CNN "Price €"
+F 9 "-" H 7050 5200 60  0001 C CNN "Distributor2"
+F 10 "-" H 7050 5100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7050 5000 60  0001 C CNN "Distributor3"
+F 12 "-" H 7050 4900 60  0001 C CNN "Distributor3 Code"
+	1    7050 6050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5850 7600 5250
+Wire Wire Line
+	7350 5850 7350 5250
+Wire Wire Line
+	7350 5250 7600 5250
+Wire Wire Line
+	7050 5850 7050 5250
+Wire Wire Line
+	7600 6250 7600 6850
+Wire Wire Line
+	7600 6850 7900 6850
+Connection ~ 11100 6850
+Wire Wire Line
+	7350 6250 7350 6850
+Wire Wire Line
+	7350 6850 7600 6850
+Connection ~ 7600 6850
+Wire Wire Line
+	7050 6250 7050 6850
+Wire Wire Line
+	7050 6850 7350 6850
+Connection ~ 7350 6850
+Connection ~ 7050 5250
+Connection ~ 7050 6850
+$Comp
+L power:GND #PWR02
+U 1 1 5C572DC2
+P 6900 5100
+F 0 "#PWR02" H 6900 5100 30  0001 C CNN
+F 1 "GND" H 6900 5100 30  0001 C CNN
+F 2 "" H 6900 5100 60  0000 C CNN
+F 3 "" H 6900 5100 60  0000 C CNN
+	1    6900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-diode:SS22 D2
+U 1 1 5C5780A5
+P 11650 4550
+F 0 "D2" H 11650 4650 50  0000 C CNN
+F 1 "SS22" H 11650 4450 50  0000 C CNN
+F 2 "DIODE:DIODE-DO214AA-UNI" H 11650 3750 60  0001 C CNN
+F 3 "2A 20V" H 11650 4350 60  0001 C CNN
+F 4 "ON Semiconductor" H 11650 4250 60  0001 C CNN "Manufacturer"
+F 5 "SS22" H 11650 4150 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 11650 4050 60  0001 C CNN "Distributor"
+F 7 "1467538" H 11650 3950 60  0001 C CNN "Distributor Code"
+F 8 "0.208" H 11650 3850 60  0001 C CNN "Price €"
+F 9 "-" H 2850 1300 50  0001 C CNN "Distributor2"
+F 10 "-" H 2850 1300 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 2850 1300 50  0001 C CNN "Distributor3"
+F 12 "-" H 2850 1300 50  0001 C CNN "Distributor3 Code"
+	1    11650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR08
+U 1 1 5C57D994
+P 12250 4450
+F 0 "#PWR08" H 12250 4375 30  0001 C CNN
+F 1 "+12V" H 12250 4550 30  0000 C CNN
+F 2 "" H 12250 4450 60  0000 C CNN
+F 3 "" H 12250 4450 60  0000 C CNN
+	1    12250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 4550 11850 4550
+Connection ~ 12250 5250
+Wire Wire Line
+	12250 4450 12250 4550
+Wire Wire Line
+	2400 4650 2400 4750
+Wire Wire Line
+	2400 6850 2650 6850
+Wire Wire Line
+	2300 4650 2400 4650
+Connection ~ 12250 4550
+Wire Wire Line
+	12250 5250 12250 4550
+Wire Wire Line
+	2300 4550 2650 4550
+Connection ~ 9600 6850
+Wire Wire Line
+	9600 6850 9900 6850
+Wire Wire Line
+	2650 5800 2650 6850
+Connection ~ 2650 6850
+Wire Wire Line
+	2650 4550 2650 5400
+Connection ~ 2650 4550
+Wire Wire Line
+	9900 5250 9900 5450
+$Comp
+L nowae016-rescue:BCW66GLT-nowae-transistor Q1
+U 1 1 5C61348E
+P 9500 6150
+F 0 "Q1" H 9725 6200 50  0000 L CNN
+F 1 "BCW66GLT" H 9725 6100 50  0000 L CNN
+F 2 "SOT:SOT23-3" H 9500 5300 50  0001 C CNN
+F 3 "45V, 100MHz, 330mW, 800mA, 60hFE" H 9500 5900 50  0001 C CNN
+F 4 "ON Semiconductor" H 9500 5800 60  0001 C CNN "Manufacturer"
+F 5 "BCW66GLT1G" H 9500 5700 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 9500 5600 60  0001 C CNN "Distributor"
+F 7 "2317524" H 9500 5500 60  0001 C CNN "Distributor Code"
+F 8 "0.157" H 9500 5400 60  0001 C CNN "Price €"
+F 9 "-" H 3950 1300 50  0001 C CNN "Distributor2"
+F 10 "-" H 3950 1300 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3950 1300 50  0001 C CNN "Distributor3"
+F 12 "-" H 3950 1300 50  0001 C CNN "Distributor3 Code"
+	1    9500 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5950 9600 5850
+Wire Wire Line
+	9750 5850 9600 5850
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R7
+U 1 1 5C61FA77
+P 9150 6500
+F 0 "R7" V 9230 6500 50  0000 C CNN
+F 1 "10k" V 9150 6500 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 9080 6500 30  0001 C CNN
+F 3 "-" H 9150 6500 30  0001 C CNN
+F 4 "Vishay" H 9150 6150 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060310K0FKEA" H 9150 6050 60  0001 C CNN "Part Number"
+F 6 "-" H 9150 5950 60  0001 C CNN "Distributor"
+F 7 "-" H 9150 5850 60  0001 C CNN "Distributor Code"
+F 8 "0.0176" H 9150 5750 60  0001 C CNN "Price €"
+F 9 "-" H 9150 5650 60  0001 C CNN "Distributor2"
+F 10 "-" H 9150 5550 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 9150 5450 60  0001 C CNN "Distributor3"
+F 12 "-" H 9150 5350 60  0001 C CNN "Distributor3 Code"
+	1    9150 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R6
+U 1 1 5C61FE4C
+P 9150 5650
+F 0 "R6" V 9230 5650 50  0000 C CNN
+F 1 "140k" V 9150 5650 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 9080 5650 30  0001 C CNN
+F 3 "-" H 9150 5650 30  0001 C CNN
+F 4 "Vishay" H 9150 5300 60  0001 C CNN "Manufacturer"
+F 5 "CRCW0603140KFKEA" H 9150 5200 60  0001 C CNN "Part Number"
+F 6 "-" H 9150 5100 60  0001 C CNN "Distributor"
+F 7 "-" H 9150 5000 60  0001 C CNN "Distributor Code"
+F 8 "0.0217" H 9150 4900 60  0001 C CNN "Price €"
+F 9 "-" H 9150 4800 60  0001 C CNN "Distributor2"
+F 10 "-" H 9150 4700 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 9150 4600 60  0001 C CNN "Distributor3"
+F 12 "-" H 9150 4500 60  0001 C CNN "Distributor3 Code"
+	1    9150 5650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 6850 9150 6750
+Wire Wire Line
+	9600 6350 9600 6850
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R11
+U 1 1 5C6430AB
+P 9600 5550
+F 0 "R11" V 9680 5550 50  0000 C CNN
+F 1 "100k" V 9600 5550 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 9530 5550 30  0001 C CNN
+F 3 "-" H 9600 5550 30  0001 C CNN
+F 4 "Vishay" H 9600 5200 60  0001 C CNN "Manufacturer"
+F 5 "CRCW0603100KFKEA" H 9600 5100 60  0001 C CNN "Part Number"
+F 6 "-" H 9600 5000 60  0001 C CNN "Distributor"
+F 7 "-" H 9600 4900 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 9600 4800 60  0001 C CNN "Price €"
+F 9 "-" H 9600 4700 60  0001 C CNN "Distributor2"
+F 10 "-" H 9600 4600 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 9600 4500 60  0001 C CNN "Distributor3"
+F 12 "-" H 9600 4400 60  0001 C CNN "Distributor3 Code"
+	1    9600 5550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9150 6850
+Wire Wire Line
+	9150 6850 9600 6850
+Wire Wire Line
+	9750 5850 9750 5350
+Wire Wire Line
+	9750 5350 10000 5350
+Wire Wire Line
+	9150 4550 9150 5400
+Wire Wire Line
+	9150 4550 11450 4550
+Wire Wire Line
+	9600 5800 9600 5850
+Connection ~ 9600 5850
+Wire Wire Line
+	9600 5300 9600 5250
+Text Label 9200 6150 0    50   ~ 0
+0V8
+Wire Wire Line
+	9900 5750 9900 6850
+Connection ~ 9900 5750
+Connection ~ 9900 6850
+Wire Wire Line
+	9900 6850 11100 6850
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R15
+U 1 1 5C59A7DE
+P 8150 2750
+F 0 "R15" V 8230 2750 50  0000 C CNN
+F 1 "18k" V 8150 2750 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 8080 2750 30  0001 C CNN
+F 3 "-" H 8150 2750 30  0001 C CNN
+F 4 "Vishay" H 8150 2400 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 8150 2300 60  0001 C CNN "Part Number"
+F 6 "-" H 8150 2200 60  0001 C CNN "Distributor"
+F 7 "-" H 8150 2100 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 8150 2000 60  0001 C CNN "Price €"
+F 9 "-" H 8150 1900 60  0001 C CNN "Distributor2"
+F 10 "-" H 8150 1800 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8150 1700 60  0001 C CNN "Distributor3"
+F 12 "-" H 8150 1600 60  0001 C CNN "Distributor3 Code"
+	1    8150 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L nowae016-rescue:GREEN-nowae-led DL4
+U 1 1 5C59AB10
+P 8700 2750
+F 0 "DL4" H 8700 2850 50  0000 C CNN
+F 1 "GREEN" H 8700 2650 50  0000 C CNN
+F 2 "LEDs:LED-0603" H 8700 2750 60  0001 C CNN
+F 3 "Green" H 8700 2750 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 8700 2400 60  0001 C CNN "Manufacturer"
+F 5 "-" H 8700 2300 60  0001 C CNN "Part Number"
+F 6 "-" H 8700 2200 60  0001 C CNN "Distributor"
+F 7 "-" H 8700 2100 60  0001 C CNN "Distributor Code"
+F 8 "0.216" H 8700 2000 60  0001 C CNN "Price €"
+F 9 "-" H 8700 1900 60  0001 C CNN "Distributor2"
+F 10 "-" H 8700 1800 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8700 1700 60  0001 C CNN "Distributor3"
+F 12 "-" H 8700 1600 60  0001 C CNN "Distributor3 Code"
+	1    8700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 7000 9900 6850
+$Comp
+L nowae016-rescue:YELLOW-nowae-led DL3
+U 1 1 5C5E7896
+P 8700 3550
+F 0 "DL3" H 8700 3650 50  0000 C CNN
+F 1 "YELLOW" H 8700 3450 50  0000 C CNN
+F 2 "LEDs:LED-0603" H 8700 3550 60  0001 C CNN
+F 3 "Yellow" H 8700 3550 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 8700 3200 60  0001 C CNN "Manufacturer"
+F 5 "-" H 8700 3100 60  0001 C CNN "Part Number"
+F 6 "-" H 8700 3000 60  0001 C CNN "Distributor"
+F 7 "-" H 8700 2900 60  0001 C CNN "Distributor Code"
+F 8 "0.216" H 8700 2800 60  0001 C CNN "Price €"
+F 9 "-" H 8700 2700 60  0001 C CNN "Distributor2"
+F 10 "-" H 8700 2600 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8700 2500 60  0001 C CNN "Distributor3"
+F 12 "-" H 8700 2400 60  0001 C CNN "Distributor3 Code"
+	1    8700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3550 8900 3550
+Text Label 9100 3550 2    50   ~ 0
+~CHG
+Wire Wire Line
+	6900 5100 6900 5000
+$Comp
+L power:+VBAT #PWR03
+U 1 1 5C7CC6A2
+P 7050 4800
+F 0 "#PWR03" H 7050 4725 30  0001 C CNN
+F 1 "+VBAT" H 7050 4910 40  0000 C CNN
+F 2 "" H 7050 4800 60  0000 C CNN
+F 3 "" H 7050 4800 60  0000 C CNN
+	1    7050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4800 7050 4900
+Connection ~ 7050 4900
+$Comp
+L power:+VBAT #PWR05
+U 1 1 5C7D321C
+P 7800 3450
+F 0 "#PWR05" H 7800 3375 30  0001 C CNN
+F 1 "+VBAT" H 7800 3560 40  0000 C CNN
+F 2 "" H 7800 3450 60  0000 C CNN
+F 3 "" H 7800 3450 60  0000 C CNN
+	1    7800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R9
+U 1 1 5C7D3460
+P 8150 3050
+F 0 "R9" V 8230 3050 50  0000 C CNN
+F 1 "18k" V 8150 3050 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 8080 3050 30  0001 C CNN
+F 3 "-" H 8150 3050 30  0001 C CNN
+F 4 "Vishay" H 8150 2700 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 8150 2600 60  0001 C CNN "Part Number"
+F 6 "-" H 8150 2500 60  0001 C CNN "Distributor"
+F 7 "-" H 8150 2400 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 8150 2300 60  0001 C CNN "Price €"
+F 9 "-" H 8150 2200 60  0001 C CNN "Distributor2"
+F 10 "-" H 8150 2100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8150 2000 60  0001 C CNN "Distributor3"
+F 12 "-" H 8150 1900 60  0001 C CNN "Distributor3 Code"
+	1    8150 3050
+	0    1    -1   0   
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R10
+U 1 1 5C7D35F6
+P 8150 3550
+F 0 "R10" V 8230 3550 50  0000 C CNN
+F 1 "18k" V 8150 3550 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 8080 3550 30  0001 C CNN
+F 3 "-" H 8150 3550 30  0001 C CNN
+F 4 "Vishay" H 8150 3200 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 8150 3100 60  0001 C CNN "Part Number"
+F 6 "-" H 8150 3000 60  0001 C CNN "Distributor"
+F 7 "-" H 8150 2900 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 8150 2800 60  0001 C CNN "Price €"
+F 9 "-" H 8150 2700 60  0001 C CNN "Distributor2"
+F 10 "-" H 8150 2600 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8150 2500 60  0001 C CNN "Distributor3"
+F 12 "-" H 8150 2400 60  0001 C CNN "Distributor3 Code"
+	1    8150 3550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7900 3550 7800 3550
+Wire Wire Line
+	8400 3550 8500 3550
+$Comp
+L nowae-connector:BARREL_JACK P1
+U 1 1 5C57AF1E
+P 2000 4650
+F 0 "P1" H 2000 4850 50  0000 C CNN
+F 1 "BARRELJACK" H 2000 4500 50  0001 C CNN
+F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 2000 4650 50  0001 C CNN
+F 3 "-" H 2000 4650 50  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 2000 4300 60  0001 C CNN "Manufacturer"
+F 5 "694106301002" H 2000 4200 60  0001 C CNN "Part Number"
+F 6 "-" H 2000 4100 60  0001 C CNN "Distributor"
+F 7 "-" H 2000 4000 60  0001 C CNN "Distributor Code"
+F 8 "0.86" H 2000 3900 60  0001 C CNN "Price €"
+F 9 "-" H 2000 3800 60  0001 C CNN "Distributor2"
+F 10 "-" H 2000 3700 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 2000 3600 60  0001 C CNN "Distributor3"
+F 12 "-" H 2000 3500 60  0001 C CNN "Distributor3 Code"
+	1    2000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-connector:BARREL_JACK P4
+U 1 1 5C57B2E2
+P 13500 5350
+F 0 "P4" H 13500 5550 50  0000 C CNN
+F 1 "BARRELJACK" H 13500 5200 50  0001 C CNN
+F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 13500 5350 50  0001 C CNN
+F 3 "-" H 13500 5350 50  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 13500 5000 60  0001 C CNN "Manufacturer"
+F 5 "694106301002" H 13500 4900 60  0001 C CNN "Part Number"
+F 6 "-" H 13500 4800 60  0001 C CNN "Distributor"
+F 7 "-" H 13500 4700 60  0001 C CNN "Distributor Code"
+F 8 "0.86" H 13500 4600 60  0001 C CNN "Price €"
+F 9 "-" H 13500 4500 60  0001 C CNN "Distributor2"
+F 10 "-" H 13500 4400 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 13500 4300 60  0001 C CNN "Distributor3"
+F 12 "-" H 13500 4200 60  0001 C CNN "Distributor3 Code"
+	1    13500 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4750 2400 4750
+Connection ~ 2400 4750
+Wire Wire Line
+	2400 4750 2400 6850
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C9
+U 1 1 5C598617
+P 12500 6150
+F 0 "C9" H 12500 6250 50  0000 L CNN
+F 1 "10u" H 12506 6065 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0805" H 12538 6000 30  0001 C CNN
+F 3 "-" H 12500 6250 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 12500 5800 60  0001 C CNN "Manufacturer"
+F 5 "885012107014" H 12500 5700 60  0001 C CNN "Part Number"
+F 6 "-" H 12500 5600 60  0001 C CNN "Distributor"
+F 7 "-" H 12500 5500 60  0001 C CNN "Distributor Code"
+F 8 "0.371" H 12500 5400 60  0001 C CNN "Price €"
+F 9 "-" H 12500 5300 60  0001 C CNN "Distributor2"
+F 10 "-" H 12500 5200 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 12500 5100 60  0001 C CNN "Distributor3"
+F 12 "-" H 12500 5000 60  0001 C CNN "Distributor3 Code"
+	1    12500 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae-capacitor:CAPACITOR_POL C10
+U 1 1 5C598744
+P 12750 6150
+F 0 "C10" H 12750 6250 50  0000 L CNN
+F 1 "47u" H 12756 6065 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-6.3x5.3" H 12788 6000 30  0001 C CNN
+F 3 "-" H 12750 6250 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 12750 5800 60  0001 C CNN "Manufacturer"
+F 5 "885012107014" H 12750 5700 60  0001 C CNN "Part Number"
+F 6 "-" H 12750 5600 60  0001 C CNN "Distributor"
+F 7 "-" H 12750 5500 60  0001 C CNN "Distributor Code"
+F 8 "0.371" H 12750 5400 60  0001 C CNN "Price €"
+F 9 "-" H 12750 5300 60  0001 C CNN "Distributor2"
+F 10 "-" H 12750 5200 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 12750 5100 60  0001 C CNN "Distributor3"
+F 12 "-" H 12750 5000 60  0001 C CNN "Distributor3 Code"
+	1    12750 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae-connector:BARREL_JACK P3
+U 1 1 5C71E675
+P 13500 4650
+F 0 "P3" H 13500 4850 50  0000 C CNN
+F 1 "BARRELJACK" H 13500 4500 50  0001 C CNN
+F 2 "CONNECTOR:BARRELJACK-WE-694106301002" H 13500 4650 50  0001 C CNN
+F 3 "-" H 13500 4650 50  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 13500 4300 60  0001 C CNN "Manufacturer"
+F 5 "694106301002" H 13500 4200 60  0001 C CNN "Part Number"
+F 6 "-" H 13500 4100 60  0001 C CNN "Distributor"
+F 7 "-" H 13500 4000 60  0001 C CNN "Distributor Code"
+F 8 "0.86" H 13500 3900 60  0001 C CNN "Price €"
+F 9 "-" H 13500 3800 60  0001 C CNN "Distributor2"
+F 10 "-" H 13500 3700 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 13500 3600 60  0001 C CNN "Distributor3"
+F 12 "-" H 13500 3500 60  0001 C CNN "Distributor3 Code"
+	1    13500 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+VIN #PWR0101
+U 1 1 5C756276
+P 2650 4450
+F 0 "#PWR0101" H 2650 4375 30  0001 C CNN
+F 1 "+VIN" H 2650 4550 30  0000 C CNN
+F 2 "" H 2650 4450 60  0000 C CNN
+F 3 "" H 2650 4450 60  0000 C CNN
+	1    2650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4450 2650 4550
+$Comp
+L power:+VIN #PWR0102
+U 1 1 5C766C41
+P 7800 2650
+F 0 "#PWR0102" H 7800 2575 30  0001 C CNN
+F 1 "+VIN" H 7800 2750 30  0000 C CNN
+F 2 "" H 7800 2650 60  0000 C CNN
+F 3 "" H 7800 2650 60  0000 C CNN
+	1    7800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C766E0E
+P 9050 3200
+F 0 "#PWR0103" H 9050 3200 30  0001 C CNN
+F 1 "GND" H 9050 3200 30  0001 C CNN
+F 2 "" H 9050 3200 60  0000 C CNN
+F 3 "" H 9050 3200 60  0000 C CNN
+	1    9050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2750 8900 2750
+Wire Wire Line
+	7900 2750 7800 2750
+Wire Wire Line
+	7800 2750 7800 2650
+Wire Wire Line
+	8400 2750 8500 2750
+$Comp
+L nowae016-rescue:CONN_2X1-nowae-connector P5
+U 1 1 5C7B7A3B
+P 7550 4950
+F 0 "P5" H 7550 5100 60  0000 C CNN
+F 1 "CONN_2X1" H 7550 4750 60  0001 C CNN
+F 2 "CONNECTOR:CONN-STRIP-2x1-2.54" H 7925 4950 60  0001 C CNN
+F 3 "-" H 7925 4950 60  0001 C CNN
+F 4 "-" H 7550 4600 60  0001 C CNN "Manufacturer"
+F 5 "-" H 7550 4500 60  0001 C CNN "Part Number"
+F 6 "-" H 7550 4400 60  0001 C CNN "Distributor"
+F 7 "-" H 7550 4300 60  0001 C CNN "Distributor Code"
+F 8 "-" H 7550 4200 60  0001 C CNN "Price €"
+F 9 "-" H 7550 4100 60  0001 C CNN "Distributor2"
+F 10 "-" H 7550 4000 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7550 3900 60  0001 C CNN "Distributor3"
+F 12 "-" H 7550 3800 60  0001 C CNN "Distributor3 Code"
+	1    7550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C7C837A
+P 7250 5100
+F 0 "#PWR09" H 7250 5100 30  0001 C CNN
+F 1 "GND" H 7250 5100 30  0001 C CNN
+F 2 "" H 7250 5100 60  0000 C CNN
+F 3 "" H 7250 5100 60  0000 C CNN
+	1    7250 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5100 7250 5000
+Wire Wire Line
+	7250 5000 7300 5000
+Wire Wire Line
+	12250 4550 13200 4550
+Wire Wire Line
+	13200 5250 12250 5250
+Wire Wire Line
+	13000 4650 13000 4750
+Wire Wire Line
+	13200 4650 13000 4650
+Wire Wire Line
+	13200 4750 13000 4750
+Connection ~ 13000 4750
+Wire Wire Line
+	13000 4750 13000 5350
+Wire Wire Line
+	13200 5350 13000 5350
+Connection ~ 13000 5350
+Wire Wire Line
+	13000 5350 13000 5450
+Wire Wire Line
+	13200 5450 13000 5450
+Connection ~ 13000 5450
+Wire Wire Line
+	13000 5450 13000 6850
+Text Notes 13350 4850 0    50   ~ 0
+12VOUT1
+Text Notes 13350 5550 0    50   ~ 0
+12VOUT2
+Text Notes 1900 4850 0    50   ~ 0
+12VIN
+Text Notes 6500 5150 0    50   ~ 0
+BATT1
+Text Notes 7500 5150 0    50   ~ 0
+BATT2
+Wire Wire Line
+	9150 5900 9150 6150
+Wire Wire Line
+	9300 6150 9150 6150
+Connection ~ 9150 6150
+Wire Wire Line
+	9150 6150 9150 6250
+Connection ~ 9150 4550
+Wire Wire Line
+	7800 3450 7800 3550
+Text Notes 9450 3200 0    50   ~ 0
+GREEN: main power supply\nYELLOW: backup power supply\nRED: low battery\n
+Text Label 12250 5500 0    50   ~ 0
++12V_BCKP
+$Comp
+L nowae016-rescue:YELLOW-nowae-led DL2
+U 1 1 5D8F5025
+P 8700 3050
+F 0 "DL2" H 8700 3150 50  0000 C CNN
+F 1 "YELLOW" H 8700 2950 50  0000 C CNN
+F 2 "LEDs:LED-0603" H 8700 3050 60  0001 C CNN
+F 3 "Yellow" H 8700 3050 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 8700 2700 60  0001 C CNN "Manufacturer"
+F 5 "-" H 8700 2600 60  0001 C CNN "Part Number"
+F 6 "-" H 8700 2500 60  0001 C CNN "Distributor"
+F 7 "-" H 8700 2400 60  0001 C CNN "Distributor Code"
+F 8 "0.216" H 8700 2300 60  0001 C CNN "Price €"
+F 9 "-" H 8700 2200 60  0001 C CNN "Distributor2"
+F 10 "-" H 8700 2100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8700 2000 60  0001 C CNN "Distributor3"
+F 12 "-" H 8700 1900 60  0001 C CNN "Distributor3 Code"
+	1    8700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3050 9050 3050
+Connection ~ 9050 3050
+Wire Wire Line
+	9050 3050 9050 2750
+Text Label 7400 3050 0    50   ~ 0
++12V_BCKP
+Wire Wire Line
+	7400 3050 7900 3050
+Wire Wire Line
+	8400 3050 8500 3050
+Wire Wire Line
+	9050 3050 9050 3200
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R20
+U 1 1 5DDEA612
+P 8600 5050
+F 0 "R20" V 8680 5050 50  0000 C CNN
+F 1 "18k" V 8600 5050 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 8530 5050 30  0001 C CNN
+F 3 "-" H 8600 5050 30  0001 C CNN
+F 4 "Vishay" H 8600 4700 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 8600 4600 60  0001 C CNN "Part Number"
+F 6 "-" H 8600 4500 60  0001 C CNN "Distributor"
+F 7 "-" H 8600 4400 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 8600 4300 60  0001 C CNN "Price €"
+F 9 "-" H 8600 4200 60  0001 C CNN "Distributor2"
+F 10 "-" H 8600 4100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8600 4000 60  0001 C CNN "Distributor3"
+F 12 "-" H 8600 3900 60  0001 C CNN "Distributor3 Code"
+	1    8600 5050
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0104
+U 1 1 5DDF8437
+P 8300 5000
+F 0 "#PWR0104" H 8300 4925 30  0001 C CNN
+F 1 "+12V" H 8300 5100 30  0000 C CNN
+F 2 "" H 8300 5000 60  0000 C CNN
+F 3 "" H 8300 5000 60  0000 C CNN
+	1    8300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R17
+U 1 1 5DDF8C10
+P 7900 6550
+F 0 "R17" V 7980 6550 50  0000 C CNN
+F 1 "100k" V 7900 6550 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 7830 6550 30  0001 C CNN
+F 3 "-" H 7900 6550 30  0001 C CNN
+F 4 "Vishay" H 7900 6200 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 7900 6100 60  0001 C CNN "Part Number"
+F 6 "-" H 7900 6000 60  0001 C CNN "Distributor"
+F 7 "-" H 7900 5900 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 7900 5800 60  0001 C CNN "Price €"
+F 9 "-" H 7900 5700 60  0001 C CNN "Distributor2"
+F 10 "-" H 7900 5600 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7900 5500 60  0001 C CNN "Distributor3"
+F 12 "-" H 7900 5400 60  0001 C CNN "Distributor3 Code"
+	1    7900 6550
+	1    0    0    1   
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R16
+U 1 1 5DDF9525
+P 7900 5750
+F 0 "R16" V 7980 5750 50  0000 C CNN
+F 1 "360k" V 7900 5750 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 7830 5750 30  0001 C CNN
+F 3 "-" H 7900 5750 30  0001 C CNN
+F 4 "Vishay" H 7900 5400 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 7900 5300 60  0001 C CNN "Part Number"
+F 6 "-" H 7900 5200 60  0001 C CNN "Distributor"
+F 7 "-" H 7900 5100 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 7900 5000 60  0001 C CNN "Price €"
+F 9 "-" H 7900 4900 60  0001 C CNN "Distributor2"
+F 10 "-" H 7900 4800 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 7900 4700 60  0001 C CNN "Distributor3"
+F 12 "-" H 7900 4600 60  0001 C CNN "Distributor3 Code"
+	1    7900 5750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7900 6000 7900 6250
+Wire Wire Line
+	7900 6250 8000 6250
+Connection ~ 7900 6250
+Wire Wire Line
+	7900 6250 7900 6300
+Wire Wire Line
+	8900 5750 8900 5700
+$Comp
+L nowae016-rescue:BCW66GLT-nowae-transistor Q3
+U 1 1 5DE9C15E
+P 8800 5950
+F 0 "Q3" H 9025 6000 50  0000 L CNN
+F 1 "BCW66GLT" H 9025 5900 50  0000 L CNN
+F 2 "SOT:SOT23-3" H 8800 5100 50  0001 C CNN
+F 3 "45V, 100MHz, 330mW, 800mA, 60hFE" H 8800 5700 50  0001 C CNN
+F 4 "ON Semiconductor" H 8800 5600 60  0001 C CNN "Manufacturer"
+F 5 "BCW66GLT1G" H 8800 5500 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 8800 5400 60  0001 C CNN "Distributor"
+F 7 "2317524" H 8800 5300 60  0001 C CNN "Distributor Code"
+F 8 "0.157" H 8800 5200 60  0001 C CNN "Price €"
+F 9 "-" H 3250 1100 50  0001 C CNN "Distributor2"
+F 10 "-" H 3250 1100 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3250 1100 50  0001 C CNN "Distributor3"
+F 12 "-" H 3250 1100 50  0001 C CNN "Distributor3 Code"
+	1    8800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R18
+U 1 1 5DEAAB11
+P 8300 5600
+F 0 "R18" V 8380 5600 50  0000 C CNN
+F 1 "140k" V 8300 5600 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 8230 5600 30  0001 C CNN
+F 3 "-" H 8300 5600 30  0001 C CNN
+F 4 "Vishay" H 8300 5250 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 8300 5150 60  0001 C CNN "Part Number"
+F 6 "-" H 8300 5050 60  0001 C CNN "Distributor"
+F 7 "-" H 8300 4950 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 8300 4850 60  0001 C CNN "Price €"
+F 9 "-" H 8300 4750 60  0001 C CNN "Distributor2"
+F 10 "-" H 8300 4650 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8300 4550 60  0001 C CNN "Distributor3"
+F 12 "-" H 8300 4450 60  0001 C CNN "Distributor3 Code"
+	1    8300 5600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8300 6050 8300 5950
+Wire Wire Line
+	8300 5350 8300 5050
+Connection ~ 8300 5950
+Wire Wire Line
+	8300 5950 8300 5850
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R19
+U 1 1 5DF60C19
+P 8550 6400
+F 0 "R19" V 8630 6400 50  0000 C CNN
+F 1 "10k" V 8550 6400 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 8480 6400 30  0001 C CNN
+F 3 "-" H 8550 6400 30  0001 C CNN
+F 4 "Vishay" H 8550 6050 60  0001 C CNN "Manufacturer"
+F 5 "CRCW060318K0FKEA" H 8550 5950 60  0001 C CNN "Part Number"
+F 6 "-" H 8550 5850 60  0001 C CNN "Distributor"
+F 7 "-" H 8550 5750 60  0001 C CNN "Distributor Code"
+F 8 "0.0166" H 8550 5650 60  0001 C CNN "Price €"
+F 9 "-" H 8550 5550 60  0001 C CNN "Distributor2"
+F 10 "-" H 8550 5450 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8550 5350 60  0001 C CNN "Distributor3"
+F 12 "-" H 8550 5250 60  0001 C CNN "Distributor3 Code"
+	1    8550 6400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8850 5050 8900 5050
+Wire Wire Line
+	8350 5050 8300 5050
+Connection ~ 8300 5050
+Wire Wire Line
+	8300 5050 8300 5000
+Wire Wire Line
+	7600 5250 7900 5250
+Wire Wire Line
+	7900 5250 7900 5500
+Connection ~ 7600 5250
+Wire Wire Line
+	7900 6800 7900 6850
+Connection ~ 7900 6850
+Wire Wire Line
+	7900 6850 8300 6850
+Wire Wire Line
+	8300 6450 8300 6850
+Connection ~ 8300 6850
+Wire Wire Line
+	8900 6150 8900 6850
+Connection ~ 8900 6850
+Wire Wire Line
+	8900 6850 9150 6850
+Wire Wire Line
+	8300 6850 8550 6850
+Wire Wire Line
+	8300 5950 8550 5950
+Wire Wire Line
+	8550 6150 8550 5950
+Connection ~ 8550 5950
+Wire Wire Line
+	8550 5950 8600 5950
+Wire Wire Line
+	8550 6650 8550 6850
+Connection ~ 8550 6850
+Wire Wire Line
+	8550 6850 8900 6850
+Wire Wire Line
+	8900 5300 8900 5050
+$Comp
+L nowae016-rescue:RED-nowae-led DL1
+U 1 1 5DDDCEAD
+P 8900 5500
+F 0 "DL1" V 8854 5413 50  0000 R CNN
+F 1 "RED" V 8945 5413 50  0000 R CNN
+F 2 "LEDs:LED-0603" H 8900 5500 60  0001 C CNN
+F 3 "" H 8900 5500 60  0001 C CNN
+F 4 "-" H 8900 5150 60  0001 C CNN "Manufacturer"
+F 5 "-" H 8900 5050 60  0001 C CNN "Part Number"
+F 6 "-" H 8900 4950 60  0001 C CNN "Distributor"
+F 7 "-" H 8900 4850 60  0001 C CNN "Distributor Code"
+F 8 "-" H 8900 4750 60  0001 C CNN "Price €"
+F 9 "-" H 8900 4650 60  0001 C CNN "Distributor2"
+F 10 "-" H 8900 4550 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 8900 4450 60  0001 C CNN "Distributor3"
+F 12 "-" H 8900 4350 60  0001 C CNN "Distributor3 Code"
+	1    8900 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L nowae016-rescue:BCW66GLT-nowae-transistor Q2
+U 1 1 5DE71E3C
+P 8200 6250
+F 0 "Q2" H 8425 6300 50  0000 L CNN
+F 1 "BCW66GLT" H 8425 6200 50  0000 L CNN
+F 2 "SOT:SOT23-3" H 8200 5400 50  0001 C CNN
+F 3 "45V, 100MHz, 330mW, 800mA, 60hFE" H 8200 6000 50  0001 C CNN
+F 4 "ON Semiconductor" H 8200 5900 60  0001 C CNN "Manufacturer"
+F 5 "BCW66GLT1G" H 8200 5800 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 8200 5700 60  0001 C CNN "Distributor"
+F 7 "2317524" H 8200 5600 60  0001 C CNN "Distributor Code"
+F 8 "0.157" H 8200 5500 60  0001 C CNN "Price €"
+F 9 "-" H 2650 1400 50  0001 C CNN "Distributor2"
+F 10 "-" H 2650 1400 50  0001 C CNN "Distributor2 Code"
+F 11 "-" H 2650 1400 50  0001 C CNN "Distributor3"
+F 12 "-" H 2650 1400 50  0001 C CNN "Distributor3 Code"
+	1    8200 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:RESISTOR-nowae-resistor R1
+U 1 1 5C57563C
+P 6850 5750
+F 0 "R1" V 6930 5750 50  0000 C CNN
+F 1 "3k9" V 6850 5750 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" V 6780 5750 30  0001 C CNN
+F 3 "-" H 6850 5750 30  0001 C CNN
+F 4 "Vishay" H 6850 5400 60  0001 C CNN "Manufacturer"
+F 5 "CRCW06032K70FKEA" H 6850 5300 60  0001 C CNN "Part Number"
+F 6 "-" H 6850 5200 60  0001 C CNN "Distributor"
+F 7 "-" H 6850 5100 60  0001 C CNN "Distributor Code"
+F 8 "0.0167" H 6850 5000 60  0001 C CNN "Price €"
+F 9 "-" H 6850 4900 60  0001 C CNN "Distributor2"
+F 10 "-" H 6850 4800 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 6850 4700 60  0001 C CNN "Distributor3"
+F 12 "-" H 6850 4600 60  0001 C CNN "Distributor3 Code"
+	1    6850 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C15
+U 1 1 5D5607F4
+P 5400 6050
+F 0 "C15" H 5400 6150 50  0000 L CNN
+F 1 "47u" H 5406 5965 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0805" H 5438 5900 30  0001 C CNN
+F 3 "10V" H 5400 6050 28  0000 C CNN
+F 4 "-" H 5400 5700 60  0001 C CNN "Manufacturer"
+F 5 "-" H 5400 5600 60  0001 C CNN "Part Number"
+F 6 "-" H 5400 5500 60  0001 C CNN "Distributor"
+F 7 "-" H 5400 5400 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5400 5300 60  0001 C CNN "Price €"
+F 9 "-" H 5400 5200 60  0001 C CNN "Distributor2"
+F 10 "-" H 5400 5100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5400 5000 60  0001 C CNN "Distributor3"
+F 12 "-" H 5400 4900 60  0001 C CNN "Distributor3 Code"
+	1    5400 6050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6850 2900 6850
+Wire Wire Line
+	5400 6250 5400 6850
+Connection ~ 5400 6850
+Text Notes 5100 5250 2    50   ~ 0
++5V
+Wire Wire Line
+	2650 4550 2900 4550
+Connection ~ 2900 4550
+Wire Wire Line
+	2900 5800 2900 6850
+Connection ~ 2900 6850
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C1
+U 1 1 5D73F52C
+P 2650 5600
+F 0 "C1" H 2650 5700 50  0000 L CNN
+F 1 "22u" H 2656 5515 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-1210" H 2688 5450 30  0001 C CNN
+F 3 "25V" H 2650 5600 28  0000 C CNN
+F 4 "Wurth Elektronik GmbH" H 2650 5250 60  0001 C CNN "Manufacturer"
+F 5 "885012109014" H 2650 5150 60  0001 C CNN "Part Number"
+F 6 "-" H 2650 5050 60  0001 C CNN "Distributor"
+F 7 "-" H 2650 4950 60  0001 C CNN "Distributor Code"
+F 8 "-" H 2650 4850 60  0001 C CNN "Price €"
+F 9 "-" H 2650 4750 60  0001 C CNN "Distributor2"
+F 10 "-" H 2650 4650 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 2650 4550 60  0001 C CNN "Distributor3"
+F 12 "-" H 2650 4450 60  0001 C CNN "Distributor3 Code"
+	1    2650 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4550 2900 5400
+Wire Wire Line
+	5400 5250 5400 5850
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C2
+U 1 1 5C5F1348
+P 2900 5600
+F 0 "C2" H 2900 5700 50  0000 L CNN
+F 1 "100n" H 2906 5515 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-0805" H 2938 5450 30  0001 C CNN
+F 3 "25" H 2900 5700 60  0001 C CNN
+F 4 "Wurth Elektronik GmbH" H 2900 5250 60  0001 C CNN "Manufacturer"
+F 5 "885012107014" H 2900 5150 60  0001 C CNN "Part Number"
+F 6 "-" H 2900 5050 60  0001 C CNN "Distributor"
+F 7 "-" H 2900 4950 60  0001 C CNN "Distributor Code"
+F 8 "0.371" H 2900 4850 60  0001 C CNN "Price €"
+F 9 "-" H 2900 4750 60  0001 C CNN "Distributor2"
+F 10 "-" H 2900 4650 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 2900 4550 60  0001 C CNN "Distributor3"
+F 12 "-" H 2900 4450 60  0001 C CNN "Distributor3 Code"
+	1    2900 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae-batterycharger:STBC08PMR U3
+U 1 1 5F26A391
+P 6150 5550
+F 0 "U3" H 6150 6050 60  0000 C CNN
+F 1 "STBC08PMR" H 6150 5050 60  0000 C CNN
+F 2 "DFN:DFN6_3.0x3.0_1.0" H 6150 4350 60  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stbc08.pdf" H 6150 4950 60  0001 C CNN
+F 4 "STMicroelectronics" H 6150 4850 60  0001 C CNN "Manufacturer"
+F 5 "STBC08PMR" H 6150 4750 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 6150 4650 60  0001 C CNN "Distributor"
+F 7 "2762712" H 6150 4550 60  0001 C CNN "Distributor Code"
+F 8 "1.08" H 6150 4450 60  0001 C CNN "Price €"
+	1    6150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6850 5650 6850
+NoConn ~ 5750 5550
+Text Label 5500 5650 0    50   ~ 0
+~CHG
+Wire Wire Line
+	5500 5650 5750 5650
+Wire Wire Line
+	6550 5400 6850 5400
+Wire Wire Line
+	6850 5400 6850 5500
+Wire Wire Line
+	6850 6000 6850 6850
+Connection ~ 6850 6850
+Wire Wire Line
+	6850 6850 7050 6850
+Wire Wire Line
+	6550 5850 6650 5850
+Wire Wire Line
+	6650 5850 6650 6850
+Connection ~ 6650 6850
+Wire Wire Line
+	6650 6850 6850 6850
+Wire Wire Line
+	5750 5850 5650 5850
+Wire Wire Line
+	5650 5850 5650 6850
+Connection ~ 5650 6850
+Wire Wire Line
+	5650 6850 6650 6850
+Wire Wire Line
+	7050 5250 6550 5250
+Wire Wire Line
+	7050 4900 7300 4900
+Wire Wire Line
+	6850 5000 6900 5000
+Wire Wire Line
+	6850 4900 7050 4900
+Wire Wire Line
+	7050 4900 7050 5250
+Wire Notes Line
+	7800 4850 7800 6950
+Wire Notes Line
+	7800 6950 9000 6950
+Wire Notes Line
+	9000 6950 9000 4850
+Wire Notes Line
+	9000 4850 7800 4850
+Text Notes 7800 7150 0    50   ~ 0
+BATTERY STATUS CONTROL\n(OPTIONAL)
+Text Notes 5850 6250 0    50   ~ 0
+R1 = 1000/Ibat
+Wire Wire Line
+	12750 6300 12750 6850
+Wire Wire Line
+	12750 5500 12750 6000
+Wire Wire Line
+	12750 6850 13000 6850
+$Comp
+L nowae-switching:ST1S10PUR U1
+U 1 1 5F8BAB8C
+P 3800 5500
+F 0 "U1" H 3800 5950 60  0000 C CNN
+F 1 "ST1S10PUR" H 3800 5050 60  0000 C CNN
+F 2 "DFN:DFN8_4.0x4.0_0.8" H 3800 4300 60  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/st1s10.pdf" H 3800 4900 60  0001 C CNN
+F 4 "ST Microelectronics" H 3800 4800 60  0001 C CNN "Manufacturer"
+F 5 "ST1S10PUR" H 3800 4700 60  0001 C CNN "Part Number"
+F 6 "Farnell Italia S.r.l." H 3800 4600 60  0001 C CNN "Distributor"
+F 7 "2253494" H 3800 4500 60  0001 C CNN "Distributor Code"
+F 8 "0.740" H 3800 4400 60  0001 C CNN "Price €"
+	1    3800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-inductor:INDUCTOR L2
+U 1 1 5F8BC0D5
+P 4600 5250
+F 0 "L2" H 4600 5350 50  0000 C CNN
+F 1 "8u2" H 4600 5200 50  0000 C CNN
+F 2 "INDUCTOR:INDUCTOR_WE-PD-1260" H 4700 5100 60  0001 C CNN
+F 3 "" H 4600 5200 60  0001 C CNN
+F 4 "-" H 4600 4950 50  0001 C CNN "Manufacturer"
+F 5 "-" H 4600 4850 50  0001 C CNN "Part Number"
+F 6 "-" H 4600 4750 50  0001 C CNN "Distributor"
+F 7 "-" H 4600 4650 50  0001 C CNN "Distributor Code"
+F 8 "-" H 4600 4550 50  0001 C CNN "Price €"
+	1    4600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-resistor:RESISTOR R3
+U 1 1 5F8BD8F2
+P 4750 5450
+F 0 "R3" H 4750 5530 50  0000 C CNN
+F 1 "11k" H 4750 5450 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" H 4750 5380 30  0001 C CNN
+F 3 "" V 4750 5450 30  0001 C CNN
+F 4 "-" H 4750 5350 60  0001 C CNN "Manufacturer"
+F 5 "-" H 4750 5250 60  0001 C CNN "Part Number"
+F 6 "-" H 4750 5150 60  0001 C CNN "Distributor"
+F 7 "-" H 4750 5050 60  0001 C CNN "Distributor Code"
+F 8 "-" H 4750 4950 60  0001 C CNN "Price €"
+F 9 "-" H 4750 4850 60  0001 C CNN "Distributor2"
+F 10 "-" H 4750 4750 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 4750 4650 60  0001 C CNN "Distributor3"
+F 12 "-" H 4750 4550 60  0001 C CNN "Distributor3 Code"
+	1    4750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L nowae-resistor:RESISTOR R2
+U 1 1 5F8BE63F
+P 4400 6050
+F 0 "R2" H 4400 6130 50  0000 C CNN
+F 1 "2k1" H 4400 6050 50  0000 C CNN
+F 2 "RESISTOR:RESISTOR-0603" H 4400 5980 30  0001 C CNN
+F 3 "" V 4400 6050 30  0001 C CNN
+F 4 "-" H 4400 5950 60  0001 C CNN "Manufacturer"
+F 5 "-" H 4400 5850 60  0001 C CNN "Part Number"
+F 6 "-" H 4400 5750 60  0001 C CNN "Distributor"
+F 7 "-" H 4400 5650 60  0001 C CNN "Distributor Code"
+F 8 "-" H 4400 5550 60  0001 C CNN "Price €"
+F 9 "-" H 4400 5450 60  0001 C CNN "Distributor2"
+F 10 "-" H 4400 5350 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 4400 5250 60  0001 C CNN "Distributor3"
+F 12 "-" H 4400 5150 60  0001 C CNN "Distributor3 Code"
+	1    4400 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 5250 4450 5250
+Wire Wire Line
+	4150 5450 4400 5450
+Wire Wire Line
+	4400 5800 4400 5450
+Connection ~ 4400 5450
+Wire Wire Line
+	4400 5450 4500 5450
+Wire Wire Line
+	5000 5450 5100 5450
+Wire Wire Line
+	5100 5450 5100 5250
+Wire Wire Line
+	5100 5250 4750 5250
+Wire Wire Line
+	5100 5450 5100 5900
+Connection ~ 5100 5450
+Wire Wire Line
+	3450 5650 3350 5650
+Wire Wire Line
+	3350 5650 3350 5750
+Wire Wire Line
+	3350 5750 3450 5750
+Wire Wire Line
+	4150 5750 4250 5750
+Wire Wire Line
+	4250 5750 4250 5650
+Wire Wire Line
+	4250 5650 4150 5650
+Wire Wire Line
+	3450 5450 3350 5450
+Wire Wire Line
+	3350 5450 3350 5350
+Wire Wire Line
+	3350 5350 3450 5350
+Wire Wire Line
+	3350 5350 3350 5250
+Wire Wire Line
+	3350 5250 3450 5250
+Connection ~ 3350 5350
+Connection ~ 4250 5750
+Connection ~ 3350 5750
+Wire Wire Line
+	2900 6850 3150 6850
+Connection ~ 3350 5250
+Wire Wire Line
+	4400 6300 4400 6850
+Connection ~ 4400 6850
+Wire Wire Line
+	4400 6850 5100 6850
+Wire Wire Line
+	3350 5750 3350 6850
+Connection ~ 3350 6850
+Wire Wire Line
+	3350 6850 4250 6850
+Wire Wire Line
+	4250 5750 4250 6850
+Connection ~ 4250 6850
+Wire Wire Line
+	4250 6850 4400 6850
+Wire Wire Line
+	5100 6200 5100 6850
+Connection ~ 5100 6850
+Wire Wire Line
+	5100 6850 5400 6850
+Wire Wire Line
+	3150 5800 3150 6850
+Connection ~ 3150 6850
+Wire Wire Line
+	3150 6850 3350 6850
+$Comp
+L nowae-capacitor:CAPACITOR_POL C12
+U 1 1 5FA6881E
+P 5100 6050
+F 0 "C12" H 5125 6150 50  0000 L CNN
+F 1 "47u" H 5125 5950 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-5.0x5.5" H 5025 6050 50  0001 C CNN
+F 3 "10V" H 5100 6050 28  0000 C CNN
+F 4 "Wurth Elektronik GmbH" H 5100 5700 60  0001 C CNN "Manufacturer"
+F 5 "865080242004" H 5100 5600 60  0001 C CNN "Part Number"
+F 6 "-" H 5100 5500 60  0001 C CNN "Distributor"
+F 7 "-" H 5100 5400 60  0001 C CNN "Distributor Code"
+F 8 "-" H 5100 5300 60  0001 C CNN "Price €"
+F 9 "-" H 5100 5200 60  0001 C CNN "Distributor2"
+F 10 "-" H 5100 5100 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 5100 5000 60  0001 C CNN "Distributor3"
+F 12 "-" H 5100 4900 60  0001 C CNN "Distributor3 Code"
+	1    5100 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L nowae016-rescue:CAPACITOR-nowae-capacitor C11
+U 1 1 5FA76BBC
+P 3150 5600
+F 0 "C11" H 3150 5700 50  0000 L CNN
+F 1 "10u" H 3156 5515 50  0000 L CNN
+F 2 "CAPACITOR:CAPACITOR-1210" H 3188 5450 30  0001 C CNN
+F 3 "25V" H 3150 5600 28  0000 C CNN
+F 4 "Wurth Elektronik GmbH" H 3150 5250 60  0001 C CNN "Manufacturer"
+F 5 "885012109013" H 3150 5150 60  0001 C CNN "Part Number"
+F 6 "-" H 3150 5050 60  0001 C CNN "Distributor"
+F 7 "-" H 3150 4950 60  0001 C CNN "Distributor Code"
+F 8 "-" H 3150 4850 60  0001 C CNN "Price €"
+F 9 "-" H 3150 4750 60  0001 C CNN "Distributor2"
+F 10 "-" H 3150 4650 60  0001 C CNN "Distributor2 Code"
+F 11 "-" H 3150 4550 60  0001 C CNN "Distributor3"
+F 12 "-" H 3150 4450 60  0001 C CNN "Distributor3 Code"
+	1    3150 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5400 3150 5250
+Wire Wire Line
+	3150 5250 3350 5250
+$Comp
+L nowae-misc:JUMPER-2 J2
+U 1 1 5FA864F3
+P 5250 5250
+F 0 "J2" H 5250 5350 39  0000 C CNN
+F 1 "JUMPER-2" H 5250 5350 39  0001 C CNN
+F 2 "MISC:JUMPERSMD-2" H 5150 5250 60  0001 C CNN
+F 3 "" H 5250 5350 60  0001 C CNN
+	1    5250 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4550 3350 4550
+$Comp
+L nowae-misc:JUMPER-2 J1
+U 1 1 5FAAD96B
+P 3350 4900
+F 0 "J1" H 3350 5000 39  0000 C CNN
+F 1 "JUMPER-2" H 3350 5000 39  0001 C CNN
+F 2 "MISC:JUMPERSMD-2" H 3250 4900 60  0001 C CNN
+F 3 "" H 3350 5000 60  0001 C CNN
+	1    3350 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 4800 3350 4550
+Connection ~ 3350 4550
+Wire Wire Line
+	3350 4550 9150 4550
+Wire Wire Line
+	3350 5000 3350 5250
+$Comp
+L nowae-misc:JUMPER-2 J3
+U 1 1 5FAD566A
+P 7200 5250
+F 0 "J3" H 7200 5350 39  0000 C CNN
+F 1 "JUMPER-2" H 7200 5350 39  0001 C CNN
+F 2 "MISC:JUMPERSMD-2" H 7100 5250 60  0001 C CNN
+F 3 "" H 7200 5350 60  0001 C CNN
+	1    7200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5250 9900 5250
+Connection ~ 9600 5250
+Connection ~ 7900 5250
+Wire Wire Line
+	5350 5250 5400 5250
+Wire Wire Line
+	5150 5250 5100 5250
+Connection ~ 5100 5250
+Wire Wire Line
+	5400 5250 5750 5250
+Connection ~ 5400 5250
+Wire Wire Line
+	7900 5250 9600 5250
+Wire Wire Line
+	7100 5250 7050 5250
+Wire Wire Line
+	7300 5250 7350 5250
+Connection ~ 7350 5250
+$EndSCHEMATC
