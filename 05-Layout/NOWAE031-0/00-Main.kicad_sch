@@ -1,0 +1,32 @@
+(kicad_sch (version 20210126) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 99.06 82.55) (size 27.94 25.4) (fields_autoplaced)
+    (stroke (width 0.0006) (type solid) (color 132 0 132 1))
+    (fill (color 255 255 255 0.0000))
+    (uuid 19eb64c2-89bf-42cb-9de1-61c3e3c22ce1)
+    (property "Nome foglio" "Constant Current Regulation" (id 0) (at 99.06 81.9143 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "File foglio" "01-CCR_sch.kicad_sch" (id 1) (at 99.06 108.4587 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 162.56 66.04) (size 41.91 46.99) (fields_autoplaced)
+    (stroke (width 0.0006) (type solid) (color 132 0 132 1))
+    (fill (color 255 255 255 0.0000))
+    (uuid c03cdb61-464c-4d17-9b6f-470f15f0d785)
+    (property "Nome foglio" "Dimming Interface" (id 0) (at 162.56 65.4043 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "File foglio" "02-Dimming.kicad_sch" (id 1) (at 162.56 113.5387 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+)
